@@ -1,6 +1,6 @@
 .container {
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 190px 1fr;
     
     /* grid-template-rows: 100px 400px; */
     /* grid-template-areas: 
@@ -31,3 +31,24 @@
     grid-row-end: 3;
     /* grid-area: sidebar; */
 }
+
+.sidebar_header {
+    display: grid;
+    grid-auto-flow: column;
+    margin-top: 10px;
+}
+
+.sidebar_dashboard {
+    align-self: center;
+    justify-self: start;
+    margin-left: -45px;
+    color: white;
+}
+
+#dashboard_icon{
+    fill: white;
+    font-size: 10px;
+    width: 45px;
+    height: 35px;
+}
+
