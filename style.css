@@ -1,0 +1,33 @@
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    
+    /* grid-template-rows: 100px 400px; */
+    /* grid-template-areas: 
+    "sidebar header"
+    "sidebar article"
+    "sidebar article"; */
+}
+
+.header {
+    background-color: orange;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    /* grid-area: header; */
+}
+
+.article {
+    background-color: green;
+    grid-column-start: 2;
+    /* grid-area: article; */
+}
+
+.sidebar {
+    background-color: blue;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    /* grid-area: sidebar; */
+}
