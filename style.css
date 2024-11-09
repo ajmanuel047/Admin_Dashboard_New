@@ -1,54 +1,100 @@
 .container {
     display: grid;
-    grid-template-columns: 190px 1fr;
+    grid-template-columns: 1fr 4fr;
     
-    /* grid-template-rows: 100px 400px; */
-    /* grid-template-areas: 
-    "sidebar header"
-    "sidebar article"
-    "sidebar article"; */
 }
 
 .header {
     background-color: orange;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    /* grid-area: header; */
+    grid-column: 2 / 3;
+   
 }
 
 .article {
     background-color: green;
-    grid-column-start: 2;
-    /* grid-area: article; */
 }
 
 .sidebar {
-    background-color: blue;
-    grid-column-start: 1;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    /* grid-area: sidebar; */
+    background-color: blue;  
+    display: grid;
+    gap: 40px;
+    grid-row: 1 / 4;
 }
 
 .sidebar_header {
     display: grid;
     grid-auto-flow: column;
-    margin-top: 10px;
+    margin-top: 10px;    
+    margin-left: 4px;
 }
 
-.sidebar_dashboard {
+.sidebar_dashboard {    
     align-self: center;
-    justify-self: start;
-    margin-left: -45px;
     color: white;
+    margin-left: -40px;
+    font-size: 1rem;
 }
 
 #dashboard_icon{
     fill: white;
-    font-size: 10px;
-    width: 45px;
-    height: 35px;
+    width: 30px;
+    height: 25px;
 }
 
+.sidebar_user_info, .sidebar_control_support {
+    display: grid;
+    gap: 14px;
+    margin-left: 10px;
+}
+
+.empty_div {
+    grid-row: 4 / 10;
+}
+
+.home, .profile, .messages {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: end;   
+    justify-content: flex-start;
+}
+
+.privacy span,.support span, .home span, .profile span, .messages span, .history span, .tasks span, .community span, .settings span {    
+    font-size: 0.9rem;
+    color: white;
+    margin-left: 6px;
+}
+
+.privacy svg,.support svg ,.home svg, .profile svg, .messages svg, .history svg, .tasks svg, .community svg, .settings svg {
+    fill: white;
+    width: 20px;
+    height: 15px;
+    
+}
+
+.history span, .tasks span {
+    margin-left: 2px;
+    margin-bottom: 10px;
+    position: relative;
+    top: -1.5px;
+}
+
+.community span{
+    margin-left: 3px;
+    position: relative;
+    top: -1px;
+}
+
+.settings span {
+    position: relative;
+    top: -2px;
+}
+
+.support span {
+    position: relative;
+    top: -2px;
+}
+
+.privacy span {
+    position: relative;
+    top: -2px;
+}
