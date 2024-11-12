@@ -193,7 +193,7 @@ input {
 .header_bottom {
   display: grid;
   grid-auto-flow: column;
-  grid-template-columns: 300px 270px;
+  grid-template-columns: 300px 350px;
   justify-content: space-between;
   /* gap: 100px; */
 }
@@ -209,6 +209,7 @@ input {
 .header_bottom_left > div:nth-child(2) > div:nth-child(2){
   background-color: pink;
   margin-top: 10px;
+  font-size: 1.2rem;
 }
 
 .header_bottom_left img {
@@ -223,17 +224,18 @@ input {
   /* background-color: skyblue; */
   display: grid;
   grid-auto-flow: column;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   align-content: center;
   position: relative;
   top: -15px;
+  gap: 10px;
 }
 
 .header_bottom_right button{
   border-radius: 10px;
   border: none;
-  width: 80px;
-  height: 25px;
+  width: 100px;
+  height: 30px;
 }
 
 
