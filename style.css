@@ -10,9 +10,8 @@
 
 
 .container {
-    display: grid;
-    width: 880px;
-    grid-template-columns: 180px 700px;
+    display: grid;    
+    grid-template-columns: 230px 1fr;
     border: 1px solid black;
     margin: auto;
     
@@ -47,8 +46,8 @@
 .sidebar_dashboard {    
     align-self: center;
     color: white;
-    margin-right: 108px;
-    font-size: 1.1rem;
+    margin-right: 80px;
+    font-size: 1.5rem;
 }
 
 #dashboard_icon{
@@ -75,7 +74,7 @@
 }
 
 .privacy span,.support span, .home span, .profile span, .messages span, .history span, .tasks span, .community span, .settings span {    
-    font-size: 0.9rem;
+    font-size: 1.3rem;
     color: white;
     margin-left: 6px;
     
@@ -84,8 +83,8 @@
 
 .privacy svg,.support svg ,.home svg, .profile svg, .messages svg, .history svg, .tasks svg, .community svg, .settings svg{
     fill: white;
-    width: 20px;
-    height: 15px;
+    width: 30px;
+    height: 20px;
     
 }
 
@@ -120,24 +119,37 @@
 
 .header_top {
   display: grid;
-  grid-template-columns: 30px 340px 1fr;
+  grid-template-columns: 1fr 300px;
   grid-template-rows: 30px;
 /*   grid-auto-flow: column; */
   background-color: purple;
   gap: 60px;
-/*   justify-content: space-around;*/
+  justify-content: start;
   margin-top: 10px;
+  align-content: center;
 }
 
 input {
   border-radius: 10px;
   border-style: none;
-  margin-left: -40px;
+ 
+  height: 25px;
+  /* margin-left: -90px; */
+ 
+}
+
+.header_top_left {
+    background-color: blue;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-auto-flow: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .header_top svg {    
-    width: 20px;
-    height: 15px;
+    width: 30px;
+    height: 30px;
 }
 
 #magnify{
@@ -147,36 +159,43 @@ input {
 
 #bell{
   fill: white;   
-  position: relative;
-  top: 22px;
-  left: 25px;
+  /* position: relative;
+  top: 22px; */
+  margin-left: 20px;
+  /* background-color: brown; */
 }
 
 .header_right {
   display: grid;
   grid-auto-flow: column;
-  justify-content: space-around;
+  grid-template-columns: 50px 60px 150px;
+  /* gap: 10px; */
   align-content: center;
   background-color: blue;
+  justify-content: center;
+  align-items: center;
+  /* margin-right: 150px; */
 }
 
 .header_right img{    
     width: 60px;
-  
+    /* background-color: saddlebrown; */
     /* height: 60px; */    
 }
 
 .header_right div:nth-child(3){
+    font-size: 1.5rem;
+    /* position: relative;
+    top: 22px; */
     
-    position: relative;
-    top: 22px;
 }
 
 .header_bottom {
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 300px 270px;
-  gap: 100px;
+  justify-content: space-between;
+  /* gap: 100px; */
 }
 
 .header_bottom_left {
@@ -216,4 +235,26 @@ input {
   width: 80px;
   height: 25px;
 }
+
+
+.article {
+    display: grid;
+    grid-template-columns: 500px 190px;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.cards_container{
+    background-color: blue;
+    display: grid;
+    grid-template-columns: 250px 250px;
+    gap: 7px;
+}
+
+ /* img{
+    height: 150px;
+    width: 200px;
+    background-color: orange;
+       
+} */
 
