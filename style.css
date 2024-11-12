@@ -1,13 +1,29 @@
+@font-face {
+    font-family: "myFont";
+    src: url("webfontkit-20241109-145847/ptn77f-webfont.woff");
+}
+
+
+:root {
+    font-family: "myFont";
+}
+
+
 .container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    width: 880px;
+    grid-template-columns: 180px 700px;
+    border: 1px solid black;
+    margin: auto;
     
 }
 
 .header {
     background-color: orange;
     grid-column: 2 / 3;
-   
+    display: grid;
+    grid-template-rows: 50px 60px;
+    gap: 15px;
 }
 
 .article {
@@ -17,7 +33,7 @@
 .sidebar {
     background-color: blue;  
     display: grid;
-    gap: 40px;
+    gap: 35px;
     grid-row: 1 / 4;
 }
 
@@ -31,8 +47,8 @@
 .sidebar_dashboard {    
     align-self: center;
     color: white;
-    margin-left: -40px;
-    font-size: 1rem;
+    margin-right: 108px;
+    font-size: 1.1rem;
 }
 
 #dashboard_icon{
@@ -43,12 +59,12 @@
 
 .sidebar_user_info, .sidebar_control_support {
     display: grid;
-    gap: 14px;
+    gap: 22px;
     margin-left: 10px;
 }
 
 .empty_div {
-    grid-row: 4 / 10;
+    grid-row: 4 / 9;
 }
 
 .home, .profile, .messages {
@@ -62,9 +78,11 @@
     font-size: 0.9rem;
     color: white;
     margin-left: 6px;
+    
 }
 
-.privacy svg,.support svg ,.home svg, .profile svg, .messages svg, .history svg, .tasks svg, .community svg, .settings svg {
+
+.privacy svg,.support svg ,.home svg, .profile svg, .messages svg, .history svg, .tasks svg, .community svg, .settings svg{
     fill: white;
     width: 20px;
     height: 15px;
@@ -98,3 +116,104 @@
     position: relative;
     top: -2px;
 }
+
+
+.header_top {
+  display: grid;
+  grid-template-columns: 30px 340px 1fr;
+  grid-template-rows: 30px;
+/*   grid-auto-flow: column; */
+  background-color: purple;
+  gap: 60px;
+/*   justify-content: space-around;*/
+  margin-top: 10px;
+}
+
+input {
+  border-radius: 10px;
+  border-style: none;
+  margin-left: -40px;
+}
+
+.header_top svg {    
+    width: 20px;
+    height: 15px;
+}
+
+#magnify{
+  margin-left: 20px;
+  align-self: center;
+}
+
+#bell{
+  fill: white;   
+  position: relative;
+  top: 22px;
+  left: 25px;
+}
+
+.header_right {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-around;
+  align-content: center;
+  background-color: blue;
+}
+
+.header_right img{    
+    width: 60px;
+  
+    /* height: 60px; */    
+}
+
+.header_right div:nth-child(3){
+    
+    position: relative;
+    top: 22px;
+}
+
+.header_bottom {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 300px 270px;
+  gap: 100px;
+}
+
+.header_bottom_left {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 40px 200px;
+  margin-left: 25px;
+  gap: 15px;
+}
+
+.header_bottom_left > div:nth-child(2) > div:nth-child(2){
+  background-color: pink;
+  margin-top: 10px;
+}
+
+.header_bottom_left img {
+    width: 100px;
+    /* background-color: blue; */
+    position: relative;
+    top: -29px;
+    right: 30px;
+}
+
+.header_bottom_right {
+  /* background-color: skyblue; */
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-around;
+  align-content: center;
+  position: relative;
+  top: -15px;
+}
+
+.header_bottom_right button{
+  border-radius: 10px;
+  border: none;
+  width: 80px;
+  height: 25px;
+}
+
