@@ -320,8 +320,38 @@ hr {
 .last_div{
     background-color: orange;
     display: grid;
+    margin-top: -6px;
+    /* gap: 10px; */
 }
 
+.horse_div, .user_div, .avatar1_div, .avatar2_div {
+    
+    display: grid;
+    grid-template-columns: 10px 1fr;
+    gap: 50px;
+    grid-auto-flow: column;
+    align-items: center;
+    background-color: blue;
+    padding: 15px;
+  
+}
 
+.last_div svg {
+    width: 35px;
+    padding: 5px;
+    border-radius: 100%;
+    background-color: purple;
+}
+
+.last_div img {
+    width: 43px;
+    padding: 3px;
+    background-color: purple;
+    border-radius: 100%;
+}
+
+.trending {
+    margin-top: -6px;
+}
 
 /* later on add repo and livepreview button on each project */
