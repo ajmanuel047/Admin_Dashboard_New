@@ -34,6 +34,7 @@
     display: grid;
     gap: 35px;
     grid-row: 1 / 4;
+    
 }
 
 .sidebar_header {
@@ -241,16 +242,21 @@ input {
 
 .article {
     display: grid;
-    grid-template-columns: 500px 190px;
-    gap: 10px;
-    margin-left: 10px;
+    grid-template-columns: 1fr 300px;
+    gap: 1px;
+    
 }
 
 .cards_container{
     background-color: blue;
     display: grid;
-    grid-template-columns: 250px 250px;
+    grid-template-columns: 1fr 1fr;
     gap: 7px;
+    
+}
+
+.card img{
+    height: 210px;
 }
 
  /* img{
@@ -260,3 +266,11 @@ input {
        
 } */
 
+.article > div:nth-child(1), .article > div:nth-child(2){
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 8px;
+}
+
+
+/* later on add repo and livepreview button on each project */
