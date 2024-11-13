@@ -274,23 +274,26 @@ input {
 
 .right_side_bar {
     display: grid;
-    gap: 1px; 
+    grid-template-rows: 300px 1px 300px;
+    gap: 20px; 
     margin-right: 10px;
     margin-left: 10px;
 }
 
-.right_side_bar div:nth-child(1){
+.right_side_bar .top{
     background-color: lightblue;
     display: grid;  
-
 }
 
-.right_side_bar div:nth-child(1) > div:nth-child(1), 
-.right_side_bar div:nth-child(1) > div:nth-child(2),
-.right_side_bar div:nth-child(1) > div:nth-child(3) {
+.right_side_bar .top {
     padding: 20px;
-    margin-bottom: -40px;
+    
+    /* background-color: blue; */
 }
+
+/* .right_side_bar .top p:nth-child(1) {
+background-color: green;
+} */
 
 hr {
     border-bottom: none;
@@ -299,21 +302,26 @@ hr {
     width: 100%;
 }
 
-.right_side_bar div div:nth-child(1) p:nth-child(1){
+.right_side_bar .top .maintenance p:last-child{
     margin-bottom: -15px;
+    margin-top: 10px;
+    /* background-color: purple; */
 }
 
-.right_side_bar div div:nth-child(1) p:last-child {    
-    margin-top: -18px;
-}
 
-.right_side_bar div div:nth-child(3) {
-     margin-top: -30px;
+.right_side_bar .share_day{
+    margin-top: 10px;
 }
 
 .right_side_bar div > p:last-child {
      font-size: 0.7rem;
-
 }
+
+.last_div{
+    background-color: orange;
+    display: grid;
+}
+
+
 
 /* later on add repo and livepreview button on each project */
