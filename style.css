@@ -18,7 +18,7 @@
 }
 
 .header {
-    background-color: rgb(182, 161, 206);
+    background-color: #5E88A5;
     grid-column: 2 / 3;
     display: grid;
     grid-template-rows: 50px 60px;
@@ -30,7 +30,7 @@
 }
 
 .sidebar {
-    background-color: rgb(134, 108, 156);  
+    background-color: #094169;  
     display: grid;
     gap: 35px;
     grid-row: 1 / 4;
@@ -128,7 +128,7 @@
   grid-template-columns: 1fr 300px;
   grid-template-rows: 30px;
 /*   grid-auto-flow: column; */
- 
+
   gap: 60px;
   justify-content: start;
   margin-top: 10px;
@@ -236,8 +236,9 @@ input {
   border: none;
   width: 100px;
   height: 30px;
-  background-color: rgb(122, 86, 151);    
+  background-color: #094169;    
   color: white;
+  
 }
 
 
