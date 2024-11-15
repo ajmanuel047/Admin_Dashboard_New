@@ -92,14 +92,14 @@
 }
 
 .history span, .tasks span {
-    margin-left: 16px;
+    margin-left: 13px;
     margin-bottom: 10px;
     position: relative;
     top: -1.5px;
 }
 
 .community span{
-    margin-left: 16px;
+    margin-left: 13px;
     position: relative;
     top: -1px;
 }
@@ -121,14 +121,16 @@
 
 .sidebar_control_support {
     margin-top: 10px;
+    
 }
 
+.sidebar_control_support span {
+    margin-left: 14px;
+}
 .header_top {
   display: grid;
   grid-template-columns: 1fr 300px;
   grid-template-rows: 30px;
-/*   grid-auto-flow: column; */
-
   gap: 60px;
   justify-content: start;
   margin-top: 10px;
@@ -138,14 +140,10 @@
 input {
   border-radius: 10px;
   border-style: none;
- 
   height: 25px;
-  /* margin-left: -90px; */
- 
 }
 
 .header_top_left {
-    
     display: grid;
     grid-template-columns: 60px 1fr;
     grid-auto-flow: column;
@@ -173,12 +171,10 @@ input {
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 50px 60px 150px;
-  /* gap: 10px; */
   align-content: center;
   color: white;
   justify-content: center;
   align-items: center;
-  /* margin-right: 150px; */
 }
 
 .header_right img{    
@@ -194,7 +190,6 @@ input {
   grid-auto-flow: column;
   grid-template-columns: 300px 350px;
   justify-content: space-between;
-  /* gap: 100px; */
 }
 
 .header_bottom_left {
@@ -213,7 +208,6 @@ input {
 
 .header_bottom_left img {
     width: 100px;
-    /* background-color: blue; */
     position: relative;
     top: -29px;
     right: 30px;
@@ -221,10 +215,8 @@ input {
 }
 
 .header_bottom_right {
-  /* background-color: skyblue; */
   display: grid;
   grid-auto-flow: column;
-  /* justify-content: space-around; */
   align-content: center;
   position: relative;
   top: -15px;
@@ -283,8 +275,6 @@ input {
 
 .right_side_bar .top {
     padding: 20px;
-    
-    /* background-color: blue; */
 }
 
 
@@ -298,7 +288,6 @@ hr {
 .right_side_bar .top .maintenance p:last-child{
     margin-bottom: -15px;
     margin-top: 10px;
-    /* background-color: purple; */
 }
 
 
@@ -314,11 +303,9 @@ hr {
     background-color: orange;
     display: grid;
     margin-top: -6px;
-    /* gap: 10px; */
 }
 
-.horse_div, .user_div, .avatar1_div, .avatar2_div {
-    
+.horse_div, .user_div, .avatar1_div, .avatar2_div {    
     display: grid;
     grid-template-columns: 10px 1fr;
     gap: 50px;
